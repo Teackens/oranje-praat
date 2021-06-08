@@ -1,15 +1,17 @@
 {
   "siteMetadata": {
-    "title": "Next.js Starter Blog",
+    "title": "Oranje Praat",
     "author": {
-      "name": "Jose Felix",
+      "name": "Daniel Huijskens",
       "summary": "who works building clean user interfaces with React."
     },
-    "description": "A blog created with Next.js and Tailwind.css",
-    "siteUrl": "https://nextjs-starter-blog-demo.netlify.app/",
-    "language": "en-US",
+    "description": "Een blog met alle afleveringen van de podcast 'Oranje Praat'",
+    "siteUrl": "https://oranjepaart.com",
+    "language": "nl",
     "social": {
-      "twitter": "Jose_R_Felix"
+      "instagram": "",
+      "facebook": "",
+      "email": ""
     }
   }
 }
