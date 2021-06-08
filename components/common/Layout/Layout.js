@@ -1,15 +1,25 @@
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
+import {
+    faSnapchat,
+    faSpotify,
+    faInstagram,
+    faFacebook,
+} from '@fortawesome/free-brands-svg-icons';
+import { faAnchor, faPodcast } from '@fortawesome/free-solid-svg-icons';
 
 export function Layout({ children }) {
     return (
         <div className="w-full min-h-screen dark:bg-gray-700 dark:text-white">
             <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
                 <Header />
+                <hr></hr>
+                <br></br>
                 <main>{children}</main>
                 <footer className="text-lg font-light">
                     Oranje Praat, de podcast © {new Date().getFullYear()}
@@ -46,6 +56,7 @@ const Header = () => {
             <div className={'max-w-md'}>
                 {isRoot ? <LargeTitle /> : <SmallTitle />}
             </div>
+            <SocialIconBar></SocialIconBar>
             {mounted && (
                 <DarkModeSwitch
                     checked={isDarkMode}
@@ -86,4 +97,14 @@ const SmallTitle = () => (
             </a>
         </Link>
     </h1>
+);
+
+const SocialIconBar = () => (
+    <>
+        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faSpotify} />
+        <FontAwesomeIcon icon={faFacebook} />
+        <FontAwesomeIcon icon={faSnapchat} />
+        <FontAwesomeIcon icon={faPodcast} />
+    </>
 );

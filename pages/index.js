@@ -26,6 +26,8 @@ export default function Home({ posts }) {
                         <section>
                             <p className="mb-8 text-lg">{description}</p>
                         </section>
+                        <hr></hr>
+                        <br></br>
                     </article>
                 )
             )}
