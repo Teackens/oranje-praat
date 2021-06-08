@@ -11,7 +11,8 @@ import {
     faInstagram,
     faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
-import { faAnchor, faPodcast } from '@fortawesome/free-solid-svg-icons';
+import { faPodcast } from '@fortawesome/free-solid-svg-icons';
+import { getSiteMetaData } from '@utils/helpers';
 
 export function Layout({ children }) {
     return (
@@ -99,12 +100,35 @@ const SmallTitle = () => (
     </h1>
 );
 
-const SocialIconBar = () => (
-    <>
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faSpotify} />
-        <FontAwesomeIcon icon={faFacebook} />
-        <FontAwesomeIcon icon={faSnapchat} />
-        <FontAwesomeIcon icon={faPodcast} />
-    </>
-);
+const SocialIconBar = () => {
+    const siteMetadata = getSiteMetaData();
+    return (
+        <>
+            <Link href={siteMetadata.social.instagram}>
+                <a href="">
+                    <FontAwesomeIcon icon={faInstagram} />
+                </a>
+            </Link>
+            <Link href={siteMetadata.social.spotify}>
+                <a href="">
+                    <FontAwesomeIcon icon={faSpotify} />
+                </a>
+            </Link>
+            <Link href={siteMetadata.social.facebook}>
+                <a href="">
+                    <FontAwesomeIcon icon={faFacebook} />
+                </a>
+            </Link>
+            <Link href={siteMetadata.social.snapchat}>
+                <a href="">
+                    <FontAwesomeIcon icon={faSnapchat} />
+                </a>
+            </Link>
+            <Link href={siteMetadata.social.podcast}>
+                <a href="">
+                    <FontAwesomeIcon icon={faPodcast} />
+                </a>
+            </Link>
+        </>
+    );
+};

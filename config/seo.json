@@ -2,16 +2,17 @@
   "siteMetadata": {
     "title": "Oranje Praat",
     "author": {
-      "name": "Daniel Huijskens",
-      "summary": "who works building clean user interfaces with React."
+      "name": "Daniel Huijskens"
     },
     "description": "Een blog met alle afleveringen van de podcast 'Oranje Praat'",
-    "siteUrl": "https://oranjepaart.com",
+    "siteUrl": "https://oranjepraat.com",
     "language": "nl",
     "social": {
-      "instagram": "",
+      "instagram": "https://www.instagram.com/oranje_praat/",
       "facebook": "",
-      "email": ""
+      "spotify": "https://open.spotify.com/show/0Zc4K0PaZDwzwJ6VgRtKgF",
+      "snapchat": "",
+      "podcast": "https://anchor.fm/daniel-huijskens"
     }
   }
 }
