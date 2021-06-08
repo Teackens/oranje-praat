@@ -102,30 +102,21 @@ const SmallTitle = () => (
 
 const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
+    console.log(siteMetadata);
     return (
         <>
             <Link href={siteMetadata.social.instagram}>
-                <a href="">
+                <a>
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </Link>
             <Link href={siteMetadata.social.spotify}>
-                <a href="">
+                <a>
                     <FontAwesomeIcon icon={faSpotify} />
                 </a>
             </Link>
-            <Link href={siteMetadata.social.facebook}>
-                <a href="">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-            </Link>
-            <Link href={siteMetadata.social.snapchat}>
-                <a href="">
-                    <FontAwesomeIcon icon={faSnapchat} />
-                </a>
-            </Link>
             <Link href={siteMetadata.social.podcast}>
-                <a href="">
+                <a>
                     <FontAwesomeIcon icon={faPodcast} />
                 </a>
             </Link>
