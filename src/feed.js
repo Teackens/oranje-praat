@@ -32,7 +32,16 @@ export const generateRssFeed = async () => {
             content: episode.content,
             date: episode.date,
             audio: episode.frontmatter.uri,
-            category: ['Sports', 'Soccer', 'Voetbal'],
+            category: [
+                { name: episode.title },
+                { name: 'Sports' },
+                { name: 'Soccer' },
+                { name: 'Voetbal' },
+                { name: 'EK' },
+                { name: '2020' },
+                { name: '2021' },
+                { name: 'European Championship' },
+            ],
         });
     });
 
