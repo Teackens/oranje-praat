@@ -4,7 +4,7 @@
     "author": {
       "name": "Daniel Huijskens"
     },
-    "description": "Een blog met alle afleveringen van de podcast 'Oranje Praat'",
+    "description": "Een blog met alle afleveringen van de podcast Oranje Praat. Nuchtere klets praat over Oranje met voor/na beschouwingen en het hele circus eromheen.",
     "siteUrl": "https://oranjepraat.com",
     "language": "nl",
     "social": {
@@ -17,6 +17,7 @@
     "contact": {
       "email": "mailto:contact@oranjepraat.com"
     },
-    "rss": "/rss/feed.xml"
+    "rss": "/rss/feed.xml",
+    "keywords": "voetbal,oranje,nederland,nl,oranjepraat,oranje,praat,ek"
   }
 }

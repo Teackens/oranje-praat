@@ -28,6 +28,8 @@ export function SEO({ title, description = '' }) {
                 name="twitter:creator"
                 content={siteMetadata.social.twitter}
             />
+            <meta name="keywords" content={siteMetadata.keywords} />
+            <meta name="robots" content="index,follow"></meta>
             <link
                 href="/icons/favicon-16x16.png"
                 rel="icon"
