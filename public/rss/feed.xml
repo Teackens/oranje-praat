@@ -4,11 +4,27 @@
         <title>Oranje Praat Podcast</title>
         <link>https://oranjepraat.com</link>
         <description>Guus en Daniel volgen het nederlands elftal tijdens het EK 2021</description>
-        <lastBuildDate>Wed, 09 Jun 2021 15:22:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 09 Jun 2021 21:14:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed voor Oranje Praat Podcast</generator>
         <language>nl</language>
         <copyright>All rights reserved 2021, Oranje Praat</copyright>
+        <item>
+            <link>https://oranjepraat.com/schaap-of-leeuw</link>
+            <guid>https://oranjepraat.com/schaap-of-leeuw</guid>
+            <content:encoded><![CDATA[In deze aflevering blikken we terug op de oefenwedstrijd tegen Georgië. Bespreken we alle tumult rondom het Nederlands elftal en blikken we vooruit op de kraker tegen Oekraine. #voetbal ⚽ #euro2020 #nedoek 
+ 
+Send in a voice message [link](https://anchor.fm/daniel-huijskens/message)]]></content:encoded>
+            <category>undefined</category>
+            <category>Sports</category>
+            <category>Soccer</category>
+            <category>Voetbal</category>
+            <category>EK</category>
+            <category>2020</category>
+            <category>2021</category>
+            <category>European Championship</category>
+            <enclosure url="https://open.spotify.com/episode/30WbuI3nQJ1augXOxMmRoh" length="0" type="audio//episode/30WbuI3nQJ1augXOxMmRoh"/>
+        </item>
         <item>
             <link>https://oranjepraat.com/chaos-of-schijn</link>
             <guid>https://oranjepraat.com/chaos-of-schijn</guid>
@@ -18,6 +34,7 @@ Send in a voice message [link](https://anchor.fm/daniel-huijskens/message)
 
 
 ]]></content:encoded>
+            <category>undefined</category>
             <category>Sports</category>
             <category>Soccer</category>
             <category>Voetbal</category>
@@ -33,6 +50,7 @@ Send in a voice message [link](https://anchor.fm/daniel-huijskens/message)
             <content:encoded><![CDATA[Analyse en voorbeschouwing van nederlands elftal tijdens het EK. 
  
 Send in a voice message [link](https://anchor.fm/daniel-huijskens/message)]]></content:encoded>
+            <category>undefined</category>
             <category>Sports</category>
             <category>Soccer</category>
             <category>Voetbal</category>
