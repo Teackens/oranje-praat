@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "clsx": "^1.1.1",
     "date-fns": "^2.22.1",
+    "feed": "^4.2.2",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "lazysizes": "^5.3.1",
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
+    "dotenv-webpack": "^7.0.3",
     "gray-matter": "^4.0.2",
     "postcss": "^8.2.8",
     "tailwindcss": "^2.0.4"

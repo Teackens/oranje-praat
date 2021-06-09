@@ -6,7 +6,12 @@ import { useRouter } from 'next/router';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
 import { faSpotify, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faPodcast, faInfo } from '@fortawesome/free-solid-svg-icons';
+import {
+    faPodcast,
+    faInfo,
+    faEnvelope,
+    faRss,
+} from '@fortawesome/free-solid-svg-icons';
 import { getSiteMetaData } from '@utils/helpers';
 
 export function Layout({ children }) {
@@ -104,6 +109,16 @@ const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
     return (
         <>
+            <Link href={siteMetadata.contact.email}>
+                <a>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                </a>
+            </Link>
+            <Link href={siteMetadata.rss}>
+                <a>
+                    <FontAwesomeIcon icon={faRss} />
+                </a>
+            </Link>
             <Link href={siteMetadata.social.instagram}>
                 <a>
                     <FontAwesomeIcon icon={faInstagram} />

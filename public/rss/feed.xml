@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Oranje Praat Podcast</title>
+        <link>https://oranje-praat.com</link>
+        <description>Guus en Daniel volgen het nederlands elftal tijdens het EK 2021</description>
+        <lastBuildDate>Wed, 09 Jun 2021 11:09:10 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed voor Oranje Praat Podcast</generator>
+        <language>nl</language>
+        <copyright>All rights reserved 2021, Oranje Praat</copyright>
+        <item>
+            <link>https://oranje-praat.com/chaos-of-schijn</link>
+            <guid>https://oranje-praat.com/chaos-of-schijn</guid>
+            <content:encoded><![CDATA[In deze aflevering blikken we terug op het oefenduel Nederland - Schotland (2-2). De spitsenstrijd tussen Woutje en Luukie. De prachtige PR kunsten van Frank de Boer. Het altijd gezellige keepers carrousel. We sluiten af met onze glazenbol voor de wedstrijd tegen Georgië(6-6-2021). 
+ 
+Send in a voice message [link](https://anchor.fm/daniel-huijskens/message)
+
+
+]]></content:encoded>
+            <enclosure url="https://open.spotify.com/episode/63T3dZ0FMyFgJlIuSq52ZO" length="0" type="audio//episode/63T3dZ0FMyFgJlIuSq52ZO"/>
+        </item>
+        <item>
+            <link>https://oranje-praat.com/het-gaat-beginnen</link>
+            <guid>https://oranje-praat.com/het-gaat-beginnen</guid>
+            <content:encoded><![CDATA[Analyse en voorbeschouwing van nederlands elftal tijdens het EK. 
+ 
+Send in a voice message [link](https://anchor.fm/daniel-huijskens/message)]]></content:encoded>
+            <enclosure url="https://open.spotify.com/episode/1IS65z3RMobzRC0bMbCMPz" length="0" type="audio//episode/1IS65z3RMobzRC0bMbCMPz"/>
+        </item>
+    </channel>
+</rss>

@@ -13,6 +13,10 @@
       "spotify": "https://open.spotify.com/show/0Zc4K0PaZDwzwJ6VgRtKgF",
       "snapchat": "",
       "podcast": "https://anchor.fm/daniel-huijskens"
-    }
+    },
+    "contact": {
+      "email": "mailto:info@oranjepraat.com"
+    },
+    "rss": "/rss/feed.xml"
   }
 }
