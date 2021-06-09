@@ -1,15 +1,17 @@
 import Head from 'next/head';
 
 import { getSiteMetaData } from '@utils/helpers';
+import { useRouter } from 'next/router';
 
 export function SEO({ title, description = '' }) {
     const siteMetadata = getSiteMetaData();
 
     const metaDescription = description || siteMetadata.description;
 
+    const canonicalURL = siteMetadata.siteUrl + useRouter().asPath;
+
     return (
         <Head>
-            <image href="/static/logo.png"></image>
             <title>
                 {title} | {siteMetadata.title}
             </title>
@@ -43,6 +45,7 @@ export function SEO({ title, description = '' }) {
                 sizes="32x32"
             />
             <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+            <link rel="canonical" href={canonicalURL} />
         </Head>
     );
 }
