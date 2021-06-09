@@ -4,7 +4,7 @@ import { getSortedPosts } from 'utils/posts';
 
 export const generateRssFeed = async () => {
     const episodes = getSortedPosts();
-    const siteURL = 'https://oranje-praat.com';
+    const siteURL = 'https://oranjepraat.com';
     const date = new Date();
 
     const feed = new Feed({
