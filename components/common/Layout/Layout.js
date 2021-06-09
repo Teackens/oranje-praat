@@ -22,8 +22,13 @@ export function Layout({ children }) {
                 <hr></hr>
                 <br></br>
                 <main>{children}</main>
-                <footer className="text-lg font-light">
+                <footer
+                    className={
+                        'grid grid-flow-col grid-cols-2 grid-rows-1 gap-4>'
+                    }
+                >
                     Oranje Praat, de podcast © {new Date().getFullYear()}
+                    <ContactLinks />
                 </footer>
             </div>
         </div>
@@ -57,11 +62,6 @@ const Header = () => {
             <div className={'max-w-md'}>
                 {isRoot ? <LargeTitle /> : <SmallTitle />}
             </div>
-            <Link href={'/over-ons'}>
-                <a>
-                    <FontAwesomeIcon icon={faInfo} />
-                </a>
-            </Link>
             <SocialIconBar></SocialIconBar>
             {mounted && (
                 <DarkModeSwitch
@@ -105,15 +105,28 @@ const SmallTitle = () => (
     </h1>
 );
 
+function ContactLinks() {
+    const siteMetadata = getSiteMetaData();
+    return (
+        <div className={'flex justify-end space-x-10'}>
+            <Link href={siteMetadata.contact.email}>
+                <a className={''}>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                </a>
+            </Link>
+            <Link href={'/over-ons'}>
+                <a>
+                    <FontAwesomeIcon icon={faInfo} />
+                </a>
+            </Link>
+        </div>
+    );
+}
+
 const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
     return (
         <>
-            <Link href={siteMetadata.contact.email}>
-                <a>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                </a>
-            </Link>
             <Link href={siteMetadata.rss}>
                 <a>
                     <FontAwesomeIcon icon={faRss} />
