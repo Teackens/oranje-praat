@@ -13,9 +13,9 @@ export default function About({ authors }) {
                 return (
                     <article key={author.frontmatter.title}>
                         <header className="mb-2">
-                            <h3 className="mb-2 text-3xl">
+                            <h2 className="mb-2 text-3xl">
                                 {author.frontmatter.title}
-                            </h3>
+                            </h2>
                         </header>
                         <section>
                             <ReactMarkdown
