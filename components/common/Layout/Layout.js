@@ -5,13 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
-import {
-    faSnapchat,
-    faSpotify,
-    faInstagram,
-    faFacebook,
-} from '@fortawesome/free-brands-svg-icons';
-import { faPodcast } from '@fortawesome/free-solid-svg-icons';
+import { faSpotify, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faPodcast, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { getSiteMetaData } from '@utils/helpers';
 
 export function Layout({ children }) {
@@ -57,6 +52,11 @@ const Header = () => {
             <div className={'max-w-md'}>
                 {isRoot ? <LargeTitle /> : <SmallTitle />}
             </div>
+            <Link href={'/over-ons'}>
+                <a>
+                    <FontAwesomeIcon icon={faInfo} />
+                </a>
+            </Link>
             <SocialIconBar></SocialIconBar>
             {mounted && (
                 <DarkModeSwitch
@@ -102,7 +102,6 @@ const SmallTitle = () => (
 
 const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
-    console.log(siteMetadata);
     return (
         <>
             <Link href={siteMetadata.social.instagram}>
