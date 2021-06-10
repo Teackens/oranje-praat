@@ -28,13 +28,6 @@ export function SEO({ title, description = '' }) {
                 content={metaDescription}
             />
             <meta property="og:locale" content="nl_NL" />
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:title" content={title} />
-            <meta name="twitter:description" content={metaDescription} />
-            <meta
-                name="twitter:creator"
-                content={siteMetadata.social.twitter}
-            />
             <meta name="keywords" content={siteMetadata.keywords} />
             <meta name="robots" content="index,follow"></meta>
             <link
