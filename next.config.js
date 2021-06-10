@@ -1,3 +1,3 @@
 const optimizedImages = require('next-optimized-images');
 
-module.exports = optimizedImages;
+module.exports = { compress: true, optimizedImages: optimizedImages };

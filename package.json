@@ -21,6 +21,7 @@
     "lazysizes": "^5.3.1",
     "lqip-loader": "^2.2.1",
     "next": "^10.2.3",
+    "next-babel-minify": "^1.0.0",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
     "next-themes": "^0.0.14",
@@ -38,8 +39,11 @@
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
+    "babel-preset-minify": "^0.5.1",
     "dotenv-webpack": "^7.0.3",
     "gray-matter": "^4.0.2",
     "postcss": "^8.2.8",
