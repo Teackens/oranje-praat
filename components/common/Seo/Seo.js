@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 export function SEO({ title, description = '' }) {
     const siteMetadata = getSiteMetaData();
 
-    const metaDescription = description || siteMetadata.description;
+    // const metaDescription = description || siteMetadata.description;
 
     const canonicalURL = siteMetadata.siteUrl + useRouter().asPath;
 
