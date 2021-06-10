@@ -1,11 +1,15 @@
 import Head from 'next/head';
 
 import { getSiteMetaData } from '@utils/helpers';
+import { useRouter } from 'next/router';
 
 export function SEO({ title, description = '' }) {
     const siteMetadata = getSiteMetaData();
 
     const metaDescription = description || siteMetadata.description;
+
+    const path = useRouter().asPath;
+    const canonicalUrl = siteMetadata.siteUrl + path;
 
     return (
         <Head>
@@ -28,6 +32,7 @@ export function SEO({ title, description = '' }) {
                 content={metaDescription}
             />
             <meta property="og:locale" content="nl_NL" />
+            <link rel="canonical" href={canonicalUrl} />
             <meta name="keywords" content={siteMetadata.keywords} />
             <meta name="robots" content="index,follow"></meta>
             <link
