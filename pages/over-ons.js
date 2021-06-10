@@ -18,11 +18,13 @@ export default function About({ authors }) {
                             </h2>
                         </header>
                         <section>
-                            <ReactMarkdown
-                                className="mb-4 prose lg:prose-lg dark:prose-dark"
-                                escapeHtml={false}
-                                source={author.content}
-                            />
+                            {authors && (
+                                <ReactMarkdown
+                                    className="mb-4 prose lg:prose-lg dark:prose-dark"
+                                    escapeHtml={false}
+                                    source={author.content}
+                                />
+                            )}
                         </section>
                         <hr></hr>
                         <br></br>

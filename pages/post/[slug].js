@@ -22,12 +22,14 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
                     </h1>
                     <p className="text-sm">{frontmatter.date}</p>
                 </header>
-                <ReactMarkdown
-                    className="mb-4 prose lg:prose-lg dark:prose-dark"
-                    escapeHtml={false}
-                    source={post.content}
-                    renderers={{ code: CodeBlock, image: MarkdownImage }}
-                />
+                {post && (
+                    <ReactMarkdown
+                        className="mb-4 prose lg:prose-lg dark:prose-dark"
+                        escapeHtml={false}
+                        source={post.content}
+                        renderers={{ code: CodeBlock, image: MarkdownImage }}
+                    />
+                )}
                 <AudioPlayer uri={frontmatter.uri}></AudioPlayer>
                 <hr className="mt-4" />
                 <footer></footer>
