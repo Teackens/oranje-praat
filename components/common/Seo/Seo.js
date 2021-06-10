@@ -11,8 +11,9 @@ export function SEO({ title, description = '' }) {
         <Head>
             <image href="/static/logo.png"></image>
             <title>
-                {title} | {siteMetadata.title}
+                {title} | {siteMetadata.title}, de podcast
             </title>
+
             <meta name="description" content={metaDescription} />
             <meta property="og:type" content="website" />
             <meta name="og:title" property="og:title" content={title} />
@@ -55,6 +56,8 @@ export function SEO({ title, description = '' }) {
             />
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
+
+            <link rel="alternate" hrefLang="nl" href={siteMetadata.siteUrl} />
         </Head>
     );
 }
