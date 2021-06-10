@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', ${YOUR_TRACKING_ID});`,
+              gtag('config', G-798GF408L9);`,
                         }}
                     />
                 </Head>
