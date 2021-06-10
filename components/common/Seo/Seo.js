@@ -17,11 +17,17 @@ export function SEO({ title, description = '' }) {
             <meta name="description" content={metaDescription} />
             <meta property="og:type" content="website" />
             <meta name="og:title" property="og:title" content={title} />
+            <meta property="og:url" content={siteMetadata.siteUrl} />
+            <meta
+                property="og:image"
+                content={siteMetadata.siteUrl + 'mstile-150x150.png'}
+            />
             <meta
                 name="og:description"
                 property="og:description"
                 content={metaDescription}
             />
+            <meta property="og:locale" content="nl_NL" />
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={metaDescription} />
