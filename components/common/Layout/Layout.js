@@ -110,12 +110,12 @@ function ContactLinks() {
     return (
         <div className={'flex justify-end space-x-10'}>
             <Link href={siteMetadata.contact.email}>
-                <a title="email ons">
+                <a className={''}>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </Link>
             <Link href={'/over-ons'}>
-                <a title="over ons">
+                <a>
                     <FontAwesomeIcon icon={faInfo} />
                 </a>
             </Link>

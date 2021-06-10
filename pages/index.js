@@ -12,7 +12,7 @@ export default function Home({ posts }) {
                 ({ frontmatter: { title, description, date }, slug }) => (
                     <article key={slug}>
                         <header className="mb-2">
-                            <h2 className="mb-2">
+                            <h3 className="mb-2">
                                 <Link
                                     href={'/post/[slug]'}
                                     as={`/post/${slug}`}
@@ -21,7 +21,7 @@ export default function Home({ posts }) {
                                         {title}
                                     </a>
                                 </Link>
-                            </h2>
+                            </h3>
                             <span className="text-sm">{date}</span>
                         </header>
                         <section>
