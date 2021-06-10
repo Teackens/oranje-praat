@@ -62,7 +62,7 @@ const Header = () => {
             <div className={'max-w-md'}>
                 {isRoot ? <LargeTitle /> : <SmallTitle />}
             </div>
-            <SocialIconBar />
+            <SocialIconBar></SocialIconBar>
             {mounted && (
                 <DarkModeSwitch
                     checked={isDarkMode}
