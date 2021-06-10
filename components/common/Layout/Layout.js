@@ -25,8 +25,8 @@ export function Layout({ children }) {
                 </p>
                 <br></br>
                 <p>
-                    Nuchtere klets praat over Oranje🍊 met voor/na beschouwingen
-                    en het hele circus eromheen.⚽ Na iedere wedstrijd van het
+                    Nuchtere klets praat over Oranje met voor/na beschouwingen
+                    en het hele circus eromheen. Na iedere wedstrijd van het
                     nederlands eftal komt een nieuwe aflevering uit!
                 </p>
                 <br></br>
