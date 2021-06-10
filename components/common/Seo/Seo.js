@@ -1,21 +1,19 @@
 import Head from 'next/head';
 
 import { getSiteMetaData } from '@utils/helpers';
-import { useRouter } from 'next/router';
 
 export function SEO({ title, description = '' }) {
     const siteMetadata = getSiteMetaData();
 
     const metaDescription = description || siteMetadata.description;
-    const canonicalURL = siteMetadata.siteUrl + useRouter().asPath;
 
     return (
         <Head>
+            <image href="/static/logo.png"></image>
             <title>
                 {title} | {siteMetadata.title}
             </title>
             <meta name="description" content={metaDescription} />
-            <link rel="canonical" href={canonicalURL} />
             <meta property="og:type" content="website" />
             <meta name="og:title" property="og:title" content={title} />
             <meta
