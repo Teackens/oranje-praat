@@ -19,16 +19,7 @@ export function Layout({ children }) {
         <div className="w-full min-h-screen dark:bg-gray-700 dark:text-white">
             <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
                 <Header />
-                <p>
-                    Welkom op de site van Oranje Praat. De podcast over het
-                    nederlands elftal🍊 tijdens het EK 2020⚽.
-                </p>
-                <br></br>
-                <p>
-                    Nuchtere klets praat over Oranje met voor/na beschouwingen
-                    en het hele circus eromheen. Na iedere wedstrijd van het
-                    nederlands eftal komt een nieuwe aflevering uit!
-                </p>
+                <IndexDescription />
                 <br></br>
                 <hr></hr>
                 <br></br>
@@ -45,6 +36,28 @@ export function Layout({ children }) {
         </div>
     );
 }
+
+const IndexDescription = () => {
+    const { pathname } = useRouter();
+    const isRoot = pathname === '/';
+
+    return (
+        isRoot && (
+            <div>
+                <p>
+                    Welkom op de site van Oranje Praat. De podcast over het
+                    nederlands elftal🍊 tijdens het EK 2020⚽.
+                </p>
+                <br></br>
+                <p>
+                    Nuchtere klets praat over Oranje met voor/na beschouwingen
+                    en het hele circus eromheen. Na iedere wedstrijd van het
+                    nederlands eftal komt een nieuwe aflevering uit!
+                </p>
+            </div>
+        )
+    );
+};
 
 const Header = () => {
     const { setTheme, resolvedTheme } = useTheme();
