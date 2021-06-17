@@ -5,8 +5,8 @@ const size = {
     width: '100%',
     height: 152,
 };
-const view = 'coverart'; // or 'coverart'
-const theme = 'black'; // or 'white'
+const view = 'coverart';
+const theme = 'black';
 
 export const AudioPlayer = ({ uri }) => {
     return (

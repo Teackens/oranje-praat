@@ -20,6 +20,7 @@ export function Layout({ children }) {
             <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
                 <Header />
                 <IndexDescription />
+
                 <br></br>
                 <hr></hr>
                 <br></br>
@@ -38,8 +39,20 @@ export function Layout({ children }) {
 }
 
 const IndexDescription = () => {
+    const { setTheme, resolvedTheme } = useTheme();
     const { pathname } = useRouter();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => setMounted(true), []);
+
+    const toggleDarkMode = checked => {
+        const isDarkMode = checked;
+
+        if (isDarkMode) setTheme('dark');
+        else setTheme('light');
+    };
     const isRoot = pathname === '/';
+    const isDarkMode = resolvedTheme === 'dark';
 
     return (
         isRoot && (
@@ -54,6 +67,26 @@ const IndexDescription = () => {
                     en het hele circus eromheen. Na iedere wedstrijd van het
                     nederlands eftal komt een nieuwe aflevering uit!
                 </p>
+                <br></br>
+                <div className="flex items-center justify-between">
+                    <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81ZGVlYmVjYy9wb2RjYXN0L3Jzcw">
+                        <img
+                            src="https://www.gstatic.com/podcasts_console/promote/English_EN/EN_Google_Podcasts_Badge.svg"
+                            alt="Luisteren op Google Podcasts"
+                        />
+                    </a>
+
+                    <a href="https://open.spotify.com/show/0Zc4K0PaZDwzwJ6VgRtKgF">
+                        <img
+                            src={
+                                isDarkMode
+                                    ? require('../../../images/spotify/spotify-podcast-badge-wht-grn-165x40.svg')
+                                    : require('../../../images/spotify/spotify-podcast-badge-blk-grn-165x40.svg')
+                            }
+                            alt="Luisteren op Spotify"
+                        />
+                    </a>
+                </div>
             </div>
         )
     );
