@@ -39,20 +39,8 @@ export function Layout({ children }) {
 }
 
 const IndexDescription = () => {
-    const { setTheme, resolvedTheme } = useTheme();
     const { pathname } = useRouter();
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => setMounted(true), []);
-
-    const toggleDarkMode = checked => {
-        const isDarkMode = checked;
-
-        if (isDarkMode) setTheme('dark');
-        else setTheme('light');
-    };
     const isRoot = pathname === '/';
-    const isDarkMode = resolvedTheme === 'dark';
 
     return (
         isRoot && (
@@ -78,11 +66,7 @@ const IndexDescription = () => {
 
                     <a href="https://open.spotify.com/show/0Zc4K0PaZDwzwJ6VgRtKgF">
                         <img
-                            src={
-                                isDarkMode
-                                    ? require('../../../images/spotify/spotify-podcast-badge-wht-grn-165x40.svg')
-                                    : require('../../../images/spotify/spotify-podcast-badge-blk-grn-165x40.svg')
-                            }
+                            src={require('../../../images/spotify/spotify-podcast-badge-wht-grn-165x40.svg')}
                             alt="Luisteren op Spotify"
                         />
                     </a>
