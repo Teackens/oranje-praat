@@ -172,27 +172,27 @@ const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
     return (
         <>
-            <Link href={encodeURIComponent(siteMetadata.social.youtube)}>
+            <Link href={siteMetadata.social.youtube}>
                 <a>
                     <FontAwesomeIcon icon={faYoutube} />
                 </a>
             </Link>
-            <Link href={encodeURIComponent(siteMetadata.rss)}>
+            <Link href={siteMetadata.rss}>
                 <a>
                     <FontAwesomeIcon icon={faRss} />
                 </a>
             </Link>
-            <Link href={encodeURIComponent(siteMetadata.social.instagram)}>
+            <Link href={siteMetadata.social.instagram}>
                 <a>
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </Link>
-            <Link href={encodeURIComponent(siteMetadata.social.spotify)}>
+            <Link href={siteMetadata.social.spotify}>
                 <a>
                     <FontAwesomeIcon icon={faSpotify} />
                 </a>
             </Link>
-            <Link href={encodeURIComponent(siteMetadata.social.podcast)}>
+            <Link href={siteMetadata.social.podcast}>
                 <a>
                     <FontAwesomeIcon icon={faPodcast} />
                 </a>
