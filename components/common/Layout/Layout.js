@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
-import { faSpotify, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+    faSpotify,
+    faInstagram,
+    faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import {
     faPodcast,
     faInfo,
@@ -168,6 +172,11 @@ const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
     return (
         <>
+            <Link href={encodeURIComponent(siteMetadata.social.youtube)}>
+                <a>
+                    <FontAwesomeIcon icon={faYoutube} />
+                </a>
+            </Link>
             <Link href={encodeURIComponent(siteMetadata.rss)}>
                 <a>
                     <FontAwesomeIcon icon={faRss} />
