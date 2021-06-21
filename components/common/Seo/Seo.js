@@ -32,7 +32,7 @@ export function SEO({ title, description = '' }) {
                 content={metaDescription}
             />
             <meta property="og:locale" content="nl_NL" />
-            <link rel="canonical" href={canonicalUrl} />
+            <link rel="canonical" href={encodeURIComponent(canonicalUrl)} />
             <meta name="keywords" content={siteMetadata.keywords} />
             <meta name="robots" content="index,follow"></meta>
             <link
@@ -61,7 +61,11 @@ export function SEO({ title, description = '' }) {
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
 
-            <link rel="alternate" hrefLang="nl" href={siteMetadata.siteUrl} />
+            <link
+                rel="alternate"
+                hrefLang="nl"
+                href={encodeURIComponent(siteMetadata.siteUrl)}
+            />
         </Head>
     );
 }

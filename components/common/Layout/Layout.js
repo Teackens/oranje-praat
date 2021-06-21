@@ -155,7 +155,7 @@ function ContactLinks() {
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </Link>
-            <Link href={'/over-ons'}>
+            <Link href={encodeURIComponent('/over-ons')}>
                 <a>
                     <FontAwesomeIcon icon={faInfo} />
                 </a>
@@ -168,22 +168,22 @@ const SocialIconBar = () => {
     const siteMetadata = getSiteMetaData();
     return (
         <>
-            <Link href={siteMetadata.rss}>
+            <Link href={encodeURIComponent(siteMetadata.rss)}>
                 <a>
                     <FontAwesomeIcon icon={faRss} />
                 </a>
             </Link>
-            <Link href={siteMetadata.social.instagram}>
+            <Link href={encodeURIComponent(siteMetadata.social.instagram)}>
                 <a>
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </Link>
-            <Link href={siteMetadata.social.spotify}>
+            <Link href={encodeURIComponent(siteMetadata.social.spotify)}>
                 <a>
                     <FontAwesomeIcon icon={faSpotify} />
                 </a>
             </Link>
-            <Link href={siteMetadata.social.podcast}>
+            <Link href={encodeURIComponent(siteMetadata.social.podcast)}>
                 <a>
                     <FontAwesomeIcon icon={faPodcast} />
                 </a>

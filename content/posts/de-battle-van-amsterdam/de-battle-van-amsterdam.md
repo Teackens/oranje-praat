@@ -3,6 +3,7 @@ title: Het gevecht🥊 van Amsterdam? 🦁 vs 🐂
 date: 2021-06-17T11:00:00.000Z
 uri: https://open.spotify.com/episode/6HQ1qHFPaMLFCuBzwmVJFB
 description: Na het terugkijken op de goede eerste wedstrijd van het Nederlands eftal. Blikken we vooruit op een licht ontvlambaar potje...
+transcript: nog invoegen
 ---
 > Wordt het de nieuwe battle van Neurenberg?
 
