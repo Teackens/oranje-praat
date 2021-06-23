@@ -40,13 +40,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
                 )}
                 <AudioPlayer uri={frontmatter.uri}></AudioPlayer>
                 <hr className="mt-4" />
-                <footer>
-                    <ControlledAccordions
-                        title="Transcript"
-                        subTitle="test sub title"
-                        content={frontmatter.transcript}
-                    ></ControlledAccordions>
-                </footer>
+                <footer></footer>
                 <br />
             </article>
 
