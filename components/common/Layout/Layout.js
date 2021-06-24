@@ -75,6 +75,13 @@ const IndexDescription = () => {
                         />
                     </a>
                 </div>
+                <br></br>
+                <a
+                    href="https://www.radioviainternet.nl"
+                    title="Luister Radio en Podcast op RadioViaInternet.nl"
+                >
+                    https://www.radioviainternet.nl
+                </a>
             </div>
         )
     );
