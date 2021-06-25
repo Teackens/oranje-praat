@@ -17,12 +17,14 @@ import {
     faRss,
 } from '@fortawesome/free-solid-svg-icons';
 import { getSiteMetaData } from '@utils/helpers';
+import RouteChangerTracker from '../RouteChangeTracker/RouteChangerTracker';
 
 export function Layout({ children }) {
     return (
         <div className="w-full min-h-screen dark:bg-gray-700 dark:text-white">
             <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
                 <Header />
+                <RouteChangerTracker />
                 <IndexDescription />
 
                 <br></br>
@@ -166,7 +168,7 @@ function ContactLinks() {
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
             </Link>
-            <Link href={encodeURIComponent('/over-ons')}>
+            <Link href={'/over-ons'}>
                 <a>
                     <FontAwesomeIcon icon={faInfo} />
                 </a>
