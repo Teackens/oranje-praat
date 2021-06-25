@@ -12,11 +12,11 @@ export default function About({ authors }) {
             {authors.map(author => {
                 return (
                     <article key={author.frontmatter.title}>
-                        <header className="mb-2">
+                        <div className="mb-2">
                             <h2 className="mb-2 text-3xl">
                                 {author.frontmatter.title}
                             </h2>
-                        </header>
+                        </div>
                         <section>
                             {authors && (
                                 <ReactMarkdown

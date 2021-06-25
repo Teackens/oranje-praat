@@ -1,5 +1,3 @@
-import Head from 'next/head';
-
 import { getSiteMetaData } from '@utils/helpers';
 import { useRouter } from 'next/router';
 
@@ -8,12 +6,14 @@ export function SEO({ title, description = '' }) {
 
     const metaDescription = description || siteMetadata.description;
 
-    const path = useRouter().asPath;
+    const router = useRouter();
+    let path;
+    path = router ? router.asPath : '/';
+
     const canonicalUrl = siteMetadata.siteUrl + path;
 
     return (
-        <Head>
-            <image href="/static/logo.png"></image>
+        <>
             <title>
                 {title} | {siteMetadata.title}, de podcast
             </title>
@@ -32,7 +32,7 @@ export function SEO({ title, description = '' }) {
                 content={metaDescription}
             />
             <meta property="og:locale" content="nl_NL" />
-            <link rel="canonical" href={encodeURIComponent(canonicalUrl)} />
+            <link rel="canonical" href={canonicalUrl} />
             <meta name="keywords" content={siteMetadata.keywords} />
             <meta name="robots" content="index,follow"></meta>
             <link
@@ -61,11 +61,22 @@ export function SEO({ title, description = '' }) {
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
 
-            <link
-                rel="alternate"
-                hrefLang="nl"
-                href={encodeURIComponent(siteMetadata.siteUrl)}
+            <link rel="alternate" hrefLang="nl" href={siteMetadata.siteUrl} />
+            <script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=UA-199251003-1"
+            ></script>
+
+            <script
+                async
+                dangerouslySetInnerHTML={{
+                    __html: `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                  
+                    gtag('config', 'UA-199251003-1');`,
+                }}
             />
-        </Head>
+        </>
     );
 }

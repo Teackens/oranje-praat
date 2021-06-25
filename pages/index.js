@@ -1,29 +1,24 @@
 import Link from 'next/link';
 
-import { Layout, SEO } from '@components/common';
+import { Layout } from '@components/common';
 import { getSortedPosts } from '@utils/posts';
 import { generateRssFeed } from '../src/feed';
 
 export default function Home({ posts }) {
     return (
         <Layout>
-            <SEO title="Alle afleveringen" />
             {posts.map(
                 ({ frontmatter: { title, description, date }, slug }) => (
                     <article key={slug}>
-                        <header className="mb-2">
-                            <h2 className="mb-2">
-                                <Link
-                                    href={'/post/[slug]'}
-                                    as={`/post/${slug}`}
-                                >
-                                    <a className="text-4xl font-bold text-yellow-600 font-display">
-                                        {title}
-                                    </a>
-                                </Link>
-                            </h2>
-                            <span className="text-sm">{date}</span>
-                        </header>
+                        <h2 className="mb-2">
+                            <Link href={'/post/[slug]'} as={`/post/${slug}`}>
+                                <a className="text-4xl font-bold text-yellow-600 font-display">
+                                    {title}
+                                </a>
+                            </Link>
+                        </h2>
+                        <span className="text-sm">{date}</span>
+
                         <section>
                             <p className="mb-8 text-lg">{description}</p>
                         </section>
