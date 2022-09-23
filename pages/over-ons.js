@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import ReactMarkdown from 'react-markdown/with-html';
 
 import { Layout, SEO } from '@components/common';
